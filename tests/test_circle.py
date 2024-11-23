@@ -1,6 +1,7 @@
 import unittest
 import calculate
 
+
 class TestCircle(unittest.TestCase):
 
     def test_area_positive(self):
@@ -17,11 +18,15 @@ class TestCircle(unittest.TestCase):
                          "incorrect data")
 
     def test_perimeter_positive(self):
-        res_perimeter_one_positive = calculate.calc("circle", "perimeter", [666])
-        self.assertEqual(res_perimeter_one_positive, 4184.601414581604)
+        res_perimeter_one_positive = calculate.calc(
+            "circle", "perimeter", [666])
+        self.assertEqual(res_perimeter_one_positive, 
+                         4184.601414581604)
 
-        res_perimeter_two_positive = calculate.calc("circle", "perimeter", [0])
-        self.assertEqual(res_perimeter_two_positive, 0.0)
+        res_perimeter_two_positive = calculate.calc(
+            "circle", "perimeter", [0])
+        self.assertEqual(res_perimeter_two_positive,
+                        0.0)
 
     def test_perimeter_negative(self):
         with self.assertRaises(ValueError) as context:
