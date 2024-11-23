@@ -13,4 +13,3 @@ def perimeter(r):
         return 2 * math.pi * r
     else:
         raise ValueError("incorrect data")
-        
