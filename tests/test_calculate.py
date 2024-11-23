@@ -40,7 +40,7 @@ class TestCalcArea(unittest.TestCase):
         fig = "circle"
         func = "area"
         size = [666]
-        expected_result = 6 * 6 * pi
+        expected_result = 666 * 666 * pi
 
         result = calc(fig, func, size)
 
